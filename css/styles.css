@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap');
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  box-sizing: border-box;
+  /*background-image: linear-gradient(rgba(32,210,190,100), rgba(21,145,85,100));*/
+  background-color: rgb(241, 241, 241);
+}
+
+#main, footer {
+  background-color: white;
+  border-radius: 10px;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: 1%;
+  padding: 10px 10px 5px 10px;
+}
+
+a:focus, a:hover {
+  color: #606c76;
+}
+
+#head {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 950px;
+  height: max-content;
+  border-radius: 10px;
+  margin: 10px;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+#h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 40px;
+  flex-grow: 7;
+  font-size: 30px;
+}
+
+button {
+  flex-grow: 3;
+  border-radius: 3px;
+  border-width: 1px;
+  margin: 5px;
+}
+
+#nav_corona {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#webdesign {
+  float: left;
+  opacity: 0.8;
+  width: 100%;
+  height: 200px;
+}
+#image{
+  color: darkmagenta;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#main-article {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 950px;
+  padding: 20px;
+}
+
+#column-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 950px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 20px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  letter-spacing: -0.1rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+input:checked+label {
+  text-decoration: line-through;
+}
+
+#textInput {
+  max-width: 80%;
+}
+
+.learn {
+  max-width: 300px;
+  flex-wrap: wrap;
+  padding: 1%;
+}
+
+.techs {
+  max-width: 300px;
+  flex-wrap: wrap;
+  padding: 1%;
+}
+
+.content {
+  max-width: 300px;
+  flex-wrap: wrap;
+  padding: 1%;
+  justify-items: center;
+}
+
+@font-face {
+  font-family: "Playfair Display", serif "Source Sans Pro", sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap');
+}

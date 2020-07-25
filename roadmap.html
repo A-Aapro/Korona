@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Replace the authors, use tuni.fi emails, and comma as a separator. -->
+  <!-- Add only those members who are contributing to the project. The contribution can range from small to big, but must exist. -->
+  <meta name="author" content="annemari.kuittinen@tuni.fi,juha.jarvensivu@tuni.fi,anni.aapro@tuni.fi">
+
+  <!-- Bootstrap CSS 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+
+  <!-- Own stylesheet -->
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+  <!-- D3 library -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+  <!-- TODO: what is this for? -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  <!-- TODO: World map extension for D3 
+  <script src="./lib/datamaps.world.min.js"></script> -->
+
+  <title>Web developer's checklist</title>
+</head>
+
+<body>
+  <section id="main">
+    <header id="head">
+      <h1 id="h1">Web Developer's Checklist</h1>
+
+      <nav id="nav" aria-label="Navigaton buttons">
+        <button id="nav_button" aria-label="Go to Corona Map page"><a id="nav_corona" href="./index.html">Go to
+            Coronavirus
+            page</a></button>
+      </nav>
+      <img id="webdesign" aria-label="Web design consept with drawings" src="./lib/OAYTMM0.jpg" alt="Web design consept">
+      <a id="image" href='https://www.freepik.com/free-photos-vectors/logo' target="_blank">Logo photo created by creativeart - www.freepik.com</a>
+    </header>
+
+
+    <article id="main-article">Welcome! Do you want to become a web developer? If you do, this is a checklist to help you get it started! Check a box if you are familiar with the topic and see where you stand in your journey. You can also
+      continue the list with your personal techs. If a topic doesn't ring any bells, read the referred article written by a pro developer.
+    </article>
+
+
+    <article id="column-wrapper">
+      <section class="learn">
+        <h2>Learning Skills & Self-Care</h2>
+        <p>Continuous learning and inquisitive mindset are web developer's must-have qualities. Develop your learning
+          skills consciously. Two learning techniques, Pomorodo and Deep Work are presented by Bar Franek in his
+          <cite><a
+              href="https://www.freecodecamp.org/news/focus-and-deep-work-your-secret-weapons-to-becoming-a-10x-developer-8e203a6ad291/" target="_blank">
+              article</a></cite>. Remember to keep your brain sharp! Take care of your physics, eat nutritious meals and
+          mind the ergonomics as well while studying. Prolonged sitting poses significant risks to the
+          health. Take breaks during the day and do some workout
+          especially for your <cite><a href="https://www.youtube.com/watch?v=TQqgf8kB6R8" target="_blank">neck!</a></cite></p><br>
+
+        <form id="learn-check">
+          <input type="checkbox" aria-checked="false" id="pomorodo">
+          <label for="pomorodo">Pomorodo</label><br>
+          <input type="checkbox" id="deepwork">
+          <label for="deepwork">Deep Work</label><br>
+          <input type="checkbox" id="ergo">
+          <label for="ergo">Ergonomics</label><br><br>
+        </form>
+      </section>
+      <section class="techs">
+        <h2>Technological Know-How</h2>
+        <p>As there are dozens of modern web technologies, first you need to figure out which of them you actually need
+          in
+          your
+          field. Self-taught front-end developer Sergei Garcia
+          <cite><a
+              href="https://medium.com/free-code-camp/my-journey-to-becoming-a-web-developer-from-scratch-without-a-cs-degree-2-years-later-and-what-i-4a7fd2ff5503" target="_blank">
+              shared</a></cite> his experiences to us. According to Mr. Garcia, here are some of the basic developing
+          tools,
+          frameworks
+          and practices. Feel free to extend the list for your personal needs.
+        </p><br>
+
+        <form id="tools">
+          <input type="checkbox" id="html">
+          <label for="html">HTML & CSS</label><br>
+          <input type="checkbox" id="JS">
+          <label for="JS">JavaScript</label><br>
+          <input type="checkbox" id="less">
+          <label for="less">CSS Prepocessors (Less & Sass)</label><br>
+          <input type="checkbox" id="design">
+          <label for="design">Responsive Design</label><br>
+          <input type="checkbox" id="angular">
+          <label for="angular">AngularJS</label><br>
+          <input type="checkbox" id="pattern">
+          <label for="pattern">Design Patterns</label><br>
+          <input type="checkbox" id="git">
+          <label for="git">Git</label><br>
+          <input type="checkbox" id="node">
+          <label for="node">NodeJS</label><br>
+          <input type="checkbox" id="acc">
+          <label for="acc">Accessibility</label><br>
+          <input type="checkbox" id="response">
+          <label for="response">Responsive Design</label><br>
+          <input type="checkbox" id="task">
+          <label for="task">Task Runners</label><br>
+          <input type="checkbox" id="clean">
+          <label for="clean">Clean Code</label><br>
+        </form>
+        <form id="textField">
+          <input type="text" id="textInput" aria-label="Text input field">
+          <label for="textInput">Add a new tool!</label><br><br>
+        </form>
+
+      </section>
+
+      <section class="content">
+        <h2>Content Awareness</h2>
+        <p> Even the experts still make mistakes while developing a site or an app, writes Mohammad Abdullah in his
+          <cite><a href=https://wparena.com/common-web-design-mistakes-to-avoid target="_blank">article</a></cite>. After creating a web
+          site or app, go through the
+          following checklist to avoid the most common mistakes. "The simpler, the better" applies in many cases of web
+          development.</p>
+        <br>
+
+        <form id="mistakes">
+          <input type="checkbox" id="slow">
+          <label for="slow">Slow-loading website</label><br>
+          <input type="checkbox" id="non">
+          <label for="non">Non-responsive website</label><br>
+          <input type="checkbox" id="messy">
+          <label for="messy">Messy and disorganized content</label><br>
+          <input type="checkbox" id="info">
+          <label for="info">Missing contact info</label><br>
+          <input type="checkbox" id="video">
+          <label for="video">Video over text</label><br>
+          <input type="checkbox" id="header">
+          <label for="header">No header tags</label><br>
+          <input type="checkbox" id="call">
+          <label for="call">Lack of call-to-action</label><br>
+          <input type="checkbox" id="seo">
+          <label for="seo">Weak SEO</label><br>
+          <input type="checkbox" id="links">
+          <label for="links">The links do not work</label><br><br>
+        </form>
+      </section>
+    </article>
+  </section>
+  <footer>
+    This page was created by Anni Aapro, Juha Järvensivu and Annemari Kuittinen as an assignment for the course <cite><a
+        href="https://www.tuni.fi/studentsguide/curriculum/course-units/uta-ykoodi-21108?year=2019" target="_blank">Introduction to Web
+        technologies</a></cite>, Tampere University.<br>
+    <br>July 13th, 2020</footer>
+</body>
+<!-- </div> -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS 
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>-->
+<!-- Own Javascript -->
+<script src="./js/roadmap.js"></script>
+
+
+
+</html>
