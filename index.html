@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Replace the authors, use tuni.fi emails, and comma as a separator. -->
+  <!-- Add only those members who are contributing to the project. The contribution can range from small to big, but must exist. -->
+  <meta name="author" content="annemari.kuittinen@tuni.fi,juha.jarvensivu@tuni.fi,anni.aapro@tuni.fi">
+
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="https://d3js.org/topojson.v2.min.js"></script>
+  <script src="https://unpkg.com/topojson-client@3"></script>
+
+  <script src="./lib/d3.min.js"></script>
+  <script src="./lib/topojson.js"></script>
+  <script src="./lib/jquery.min.js"></script>
+  <script src="./lib/datamaps.world.min.js"></script>
+  <!--<link rel="stylesheet" type="text/css" href="./lib/bootstrap-responsive.min.css">
+  <link rel="stylesheet" type="text/css" href="./lib/bootstrap.min.css">-->
+  <!-- Own stylesheet -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+
+  <title>Corona World Map</title>
+</head>
+
+<body>
+  <section id="view">
+    <main id="heading">
+      <p id="title" role="heading">Global Spread of COVID-19</p>
+
+      <nav id="nav" aria-label="Navigaton buttons">
+        <!--<button aria-label="Go to Corona Map page"><a id="nav_corona" href="./index.html">Corona</a></button>-->
+        <button id="road" aria-label="Go to Roadmap page"><a id="nav_roadmap" href="./roadmap.html"> Go to Roadmap
+            page</a></button>
+      </nav>
+
+    </main>
+
+    <article id="main-article">Welcome! This web application was created to show the daily
+      statistics of COVID-19 by a given country. The server was removed after July 16th, hence the stats shows only that date. Map visualizes the situation of the neighbouring countries as well.
+      Start the time lapse representation and observe how the new coronavirus spread across the world from January 22nd until July 16th, 2020. The darker the color, the more
+      infections have been confirmed. Purple color means alarming death rate of the virus.
+    </article>
+    <section id="wrapper">
+
+      <section id="mapview">
+        <label id="date" class="info"></label>
+        <form name="timeseriesForm" id="timeseriesForm">
+          <button id="timeseries" type="button">Start time series</button>
+         <!-- <button id="stopseries" type="button">Stop</button>-->
+        </form>
+        <section id="mapcontainer" role="presentation">
+        </section>
+        <label id="situation"></li>COVID-19 situation:</label>
+        <ul id="codes">
+          <li id="nodata">No data</li>
+          <li id="low">Low</li>
+          <li id="medium">Medium</li>
+          <li id="high">High</li>
+          <li id="alarming">High death rate</li>
+        </ul>
+      </section>
+
+      <section id="side-right">
+
+        <form name="countryform" id="countryform">
+          <label for="country">Give a country:</label>
+          <input id="country" type="text" name="country" list="searchresults" autocomplete="off">
+          <datalist id="searchresults"></datalist>
+        </form>
+
+        <section id="stat-table" style="overflow-x:auto;">
+          <label id="selection">Selected countries:</label>
+          <div class="table-wrapper-scroll-y my-custom-scrollbar" role="table">
+            <table class="table table-bordered table-striped mb-0" id="stats">
+              <thead id="sort">
+                <tr>
+                  <td class="th"><a id="n0" class="noDeco">Country</a></td>
+                  <td class="th"><a id="n1" class="noDeco">Confirmed</a></td>
+                  <td class="th"><a id="n2" class="noDeco">Deaths</a></td>
+                  <td class="th"><a id="n3" class="noDeco">Recovered</a></td>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+              </tbody>
+            </table>
+            <label id="info"></li>*-1: No data available</label>
+          </div>
+        </section>
+
+      </section>
+    </section>
+  </section>
+  <footer>
+    This page was created by Anni Aapro, Juha Järvensivu and Annemari Kuittinen as an assignment for the course
+    <cite><a href=https://www.tuni.fi/studentsguide/curriculum/course-units/uta-ykoodi-21108?year=2019>Introduction to
+        Web technologies</a></cite>, Tampere University. The coronavirus information was first retrieved from a server that was
+    temporarily set for the purpose in TUNI premises: https://tie-lukioplus.rd.tuni.fi/corona/api/.
+    The server was removed since July 16th, hence the statistics of this map are availabe only up to that date.
+    From then, the data files were uploaded to GitHub. The service was a REST API. The server collected information by using the underlying
+    Heroku App that provides necessary and nearly up-to-date statistics about coronavirus spreading.<br>
+    <br>July 13th, 2020</footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS 
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>-->
+  <!-- Own Javascript -->
+  <script src="./js/config.js"></script>
+  <script src="./js/index.js"></script>
+
+
+</body>
+
+</html>
