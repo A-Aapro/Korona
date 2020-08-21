@@ -16,7 +16,7 @@ html {
   margin-left: 2%;
   margin-right: 5%;
   margin-top: 5%;
-  background-color: #e2e2e2;
+  background-color: #f3f0f0;
 }
 
 body {
@@ -36,8 +36,8 @@ body {
 #heading {
   font-family: "Merriweather", serif;
   display: flex;
-  color: azure;
-  background-color: #776979;
+  color: rgb(255, 255, 255);
+  background-color: #007777;
   text-decoration: #feffff;
 }
 
@@ -229,6 +229,6 @@ footer {
   
 footer {
   width: 95vw;
-  /* For mobile phones: */
 }
+  /* For mobile phones: */
 }
