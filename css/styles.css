@@ -7,7 +7,7 @@ html {
   font-family: 'Source Sans Pro', sans-serif;
   box-sizing: border-box;
   /*background-image: linear-gradient(rgba(32,210,190,100), rgba(21,145,85,100));*/
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(0, 0, 0);
 }
 
 #main, footer {
