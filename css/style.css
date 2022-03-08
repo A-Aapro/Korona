@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@font-face {
+  font-family: "Work Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  margin-left: 2%;
+  margin-right: 5%;
+  margin-top: 5%;
+  background-color: #ffffff;
+}
+
+body {
+  line-height: 1.6;
+ 
+}
+
+#view {
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  height: max-content;
+  background-color: #feffff;
+  padding: 10px;
+}
+
+#heading {
+  display: flex;
+  background-color: #c4cbda;
+  text-decoration: #feffff;
+}
+
+#title {
+  flex-grow: 7;
+  font-size: 30px;
+  margin: 5px;
+}
+
+#road {
+  flex-grow: 3;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+#nav_roadmap {
+  text-decoration: none;
+}
+
+#main-article {
+  width: 95%;
+  margin: 2%;
+}
+
+#wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#codes {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  border-color: white;
+  border-style: solid;
+  border-width: thin;
+  padding: 5px;
+  min-width: 70px;
+}
+
+#nodata {
+  background-color: #d3d3d3;
+}
+
+#low {
+  background-color: rgb(128, 218, 240);
+}
+
+#medium {
+  color: white;
+  background-color: rgb(25, 162, 204);
+}
+
+#high {
+  color: white;
+  background-color: rgb(6, 33, 49);
+}
+
+#alarming {
+  color: white;
+  background-color: rgb(99, 81, 148);
+}
+
+#mapview {
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  margin: 5px;
+}
+
+#mapcontainer {
+  background-color: rgb(255, 255, 255);
+  font-size: 0;
+}
+
+#date {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#side-right {
+  display: flex;
+  flex-direction: column;
+  max-width: min-content;
+  max-height: 500px;
+  font-size: 14px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#country {
+  max-width: 150px;
+}
+
+table {
+  border-collapse: collapse;
+  width: min-content;
+}
+
+table, th, td {
+  border: 1px solid black;
+  background-color: #fcf6fb;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.th {
+  background-color: lightgray;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.noDeco:hover {
+  color: #d83f87;
+  font-style: oblique;
+  cursor: pointer;
+}
+
+.noDeco {
+  text-decoration: none;
+  color: black;
+}
+
+#stat-table {
+  text-align: start;
+  padding-top: 15px;
+  width: 100%;
+}
+
+table:nth-child(1n+2) {
+  overflow: scroll;
+}
+
+a:focus, a:hover {
+  color: #606c76;
+}
+
+footer {
+  width: 95vw;
+  font-size: small;
+  line-height: 1.6;
+  background-color: #eeeeee;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+  /* For mobile phones: */
+ 
+}
